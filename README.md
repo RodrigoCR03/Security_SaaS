@@ -25,30 +25,42 @@ O SSDI é uma solução completa que integra múltiplas camadas de segurança e 
 
 ## **Instalação/Configuração**
 1. **Configuração do Backend:**
+```bash
 cd backend
 python -m venv venv
 source venv/bin/activate  # No Windows, use 'venv\Scripts\activate'
 pip install -r requirements.txt
+```
 
-2. **Configuração a base de dados:**
+3. **Configuração a base de dados:**
+```bash
 flask db init
 flask db migrate
 flask db upgrade
+```
 
-3. **Configuração a base de dados:**
+4. **Configuração a base de dados:**
+```bash
 cd ../frontend
 npm install
+```
 
-4. **Configuração do Blockchain:**
+5. **Configuração do Blockchain:**
+```bash
 cd ../blockchain
 npm install
+```
 
-5. **Iniciar o Ganache CLI:**
+6. **Iniciar o Ganache CLI:**
+```bash
 ganache-cli --deterministic --port 8545
+```
 
-6. **Compilar e migre os contratos:**
+7. **Compilar e migre os contratos:**
+```bash
 truffle compile
 truffle migrate --reset
+```
 
 ### **Pré-requisitos**
 
@@ -61,23 +73,28 @@ truffle migrate --reset
 ### **Execução da aplicação**
 
 1. **Clone o repositório:**
-
    ```bash
    git clone https://github.com/RodrigoCR03/Security_SaaS.git
    cd Security_SaaS
+   ```
 
 2. **Iniciar o Backend::**
     ```bash
     cd backend
     source venv/bin/activate
     flask run
+    ```
 
 3. **Iniciar o Frontend:**
     ```bash
     cd frontend
     npm start
+    ```
 
 4. **Acessar a Aplicação:**
-- Abrir o navegador e aceder ao http://localhost:3000
+- Abrir o navegador e aceder ao url
+   ```bash
+   http://localhost:3000
+   ```
 
 
