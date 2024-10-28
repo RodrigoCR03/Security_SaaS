@@ -73,8 +73,7 @@ truffle migrate --reset
     source venv/bin/activate
     flask run
 
-
-3. **Iniciar o Frontend::**
+3. **Iniciar o Frontend:**
     ```bash
     cd frontend
     npm start
