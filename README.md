@@ -24,32 +24,31 @@ O SSDI é uma solução completa que integra múltiplas camadas de segurança e 
 - [Contato](#contato)
 
 ## **Instalação/Configuração**
-**Configuração do Backend:**
+1. **Configuração do Backend:**
 cd backend
 python -m venv venv
 source venv/bin/activate  # No Windows, use 'venv\Scripts\activate'
 pip install -r requirements.txt
 
-**Configuração a base de dados:**
+2. **Configuração a base de dados:**
 flask db init
 flask db migrate
 flask db upgrade
 
-**Configuração a base de dados:**
+3. **Configuração a base de dados:**
 cd ../frontend
 npm install
 
-**Configuração do Blockchain:**
+4. **Configuração do Blockchain:**
 cd ../blockchain
 npm install
 
-**Iniciar o Ganache CLI:**
+5. **Iniciar o Ganache CLI:**
 ganache-cli --deterministic --port 8545
 
-**Compilar e migre os contratos:**
+6. **Compilar e migre os contratos:**
 truffle compile
 truffle migrate --reset
-
 
 ### **Pré-requisitos**
 
